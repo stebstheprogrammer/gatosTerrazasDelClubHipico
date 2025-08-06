@@ -213,3 +213,35 @@ ul {
 li {
     margin-bottom: 0.5rem;
 }
+
+/* Añade esto a tu archivo style.css */
+img {
+    max-width: 100%;    /* Máximo ancho del contenedor */
+    height: auto;       /* Altura automática (mantiene proporción) */
+    display: block;     /* Elimina espacio fantasma debajo de imágenes */
+    object-fit: cover;  /* Opcional: cubre el contenedor sin deformar (para contenedores con tamaño fijo) */
+}
+
+/* Específico para la galería de evidencia */
+.gallery img {
+    width: 100%;        /* Ocupa el 100% del contenedor padre */
+    height: 250px;      /* Altura fija para uniformidad (ajusta este valor) */
+    object-fit: cover;  /* Recorta inteligentemente manteniendo proporciones */
+    border-radius: 4px; /* Opcional: esquinas redondeadas */
+}
+
+/* Contenedores padres deben tener tamaño definido */
+.gallery-item {
+    width: 100%;        /* Asegura que el contenedor use todo el espacio disponible */
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
