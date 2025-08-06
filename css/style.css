@@ -225,8 +225,8 @@ img {
 /* Específico para la galería de evidencia */
 .gallery img {
     width: 100%;        /* Ocupa el 100% del contenedor padre */
-    height: 250px;      /* Altura fija para uniformidad (ajusta este valor) */
-    object-fit: cover;  /* Recorta inteligentemente manteniendo proporciones */
+    height: 450px;      /* Altura fija para uniformidad (ajusta este valor) */
+    object-fit:fill;  /* Recorta inteligentemente manteniendo proporciones */
     border-radius: 4px; /* Opcional: esquinas redondeadas */
 }
 
